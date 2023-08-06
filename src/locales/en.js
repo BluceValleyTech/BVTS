@@ -19,4 +19,5 @@ export default {
     FB_IG: 'FB & IG',
     additonal: 'Additonal Value',
     email:'E-Mail',
+    webDesign:'Web Design',
 }

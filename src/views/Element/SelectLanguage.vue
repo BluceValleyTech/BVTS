@@ -13,20 +13,21 @@
 import { useChangeLangugeStore } from '/src/stores/changeLanguage.js'
 import { ref ,computed } from 'vue'
 const ChangLanguageStore = useChangeLangugeStore()
-ChangLanguageStore.select = 'en'
+ChangLanguageStore.select = 'zh'
 
 
 const value = ref('')
 const options = [
-  {
-    value: 'en',
-    label: 'English',
-  },
-  {
+{
     value: 'zh',
     label: '繁體中文',
 
   },
+  {
+    value: 'en',
+    label: 'English',
+  },
+ 
 ]
 
 

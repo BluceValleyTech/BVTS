@@ -1,38 +1,24 @@
 <script setup>
-import LayoutGoogleForm from '/src/views/Layout/LayoutGoogleForm.vue'
 
 
 </script>
 
 <template>
     <footer>
-        <div class="footer">
-            <div class="container">
-                <div class="containerMiddle">
-                    <ul>
-                        <li>
-                            <div>
-                                <a href="https://lin.ee/9CYPm32"><img
-                                        src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友"
-                                        height="36"></a>
-                            </div>
-                        </li>
-                        <li>{{ $t('bluceValley') }} <span>{{ $t('Tel') }}</span></li>
-                        <li>E-mail:<a href="">{{ $t('Mail') }}@gmail.com</a></li>
-                       
-                    </ul>
-                </div>
-                <div class="bridge">
-                    <img class="stoneSleep" src="/src/images/truck-g1ebd01ed3_640.png" />
-                </div>
+       <div class="footer">
+        <div class="foot-text">
+            <img src="/src/images/LogoHead.jpg">
+            <p>歡迎與我們聯繫討論
+                <br>網頁都是用代碼編成<br>客製化程度配合度極高
+            </p>
+        
+            
+        </div>
+            <div class="footer-content">
+                Copyright &#169; BVTS RIGHTS RESERVED
             </div>
         </div>
-
     </footer>
-
-    <div class="google">
-        <LayoutGoogleForm />
-    </div>
 </template>
 
 <style scoped lang="scss">
@@ -42,53 +28,43 @@ import LayoutGoogleForm from '/src/views/Layout/LayoutGoogleForm.vue'
     box-sizing: border-box;
 }
 
-.footer {
+
+.footer{
+    padding: 100px 0px 0px 0px;
+    flex-wrap: 1;
+    font-size: 14px;
+    font-weight: 600;
     background-color: #cce6ff;
-    border: 1px solid #e4e4e4;
-    padding: 0px 100px;
-
-    .container {
-        width: 100%;
-        flex-grow: 1;
+    .foot-text{
+        
         display: flex;
+        justify-content:center;
+        align-items: center;
+        
+        
         font-weight: 600;
-        letter-spacing: 1px;
-        justify-content: space-between;
+        p{
+        
 
-        .containerMiddle {
-            width: 100%;
-            flex-grow: 1;
-            display: flex;
-            // justify-content: space-between;
-            align-items: last baseline;
+        font-size: 1.5em;
+        flex-wrap: wrap;
+        letter-spacing: 5px;
+        line-height: 1.6;
+        color:goldenrod;
+
+       
         }
-
-        li {
-            list-style: none;
+        img{
+            
+            width: 300px;
+            height: 200px;
         }
-
-        a {
-            text-decoration: none;
-
-        }
-
-        .bridge{
-            width:100%;
-            height: 300px;
-            min-width: 300px;
-            max-width: 500px;
-            img{
-                width: 100%;
-                height: 300px;
-            }
-        }
-
     }
-}
-
-@media screen and (max-width:1000px) {
-    .bridge{
-        display: none;
+    .footer-content{
+        display: flex;
+        justify-content: center;
+        padding: 50px 0px 0px 0px;
+        
     }
 
     
@@ -97,11 +73,13 @@ import LayoutGoogleForm from '/src/views/Layout/LayoutGoogleForm.vue'
 
 
 
-
-@media screen and (max-width:610px) {
-    .footer{
-        padding: 0px;
+@media screen and (max-width:400px) {
+    .foot-text{
+       flex-direction: column;
     }
+
+    
 }
+
 
 </style>

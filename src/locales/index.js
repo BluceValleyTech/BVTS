@@ -3,7 +3,7 @@ import enMessages from '/src/locales/en.js'
 import zhMessages from '/src/locales/zh.js'
 
 const i18n = createI18n({
-    locale:'en',
+    locale:'zh',
     messages: {
         en: enMessages,
         zh: zhMessages

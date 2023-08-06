@@ -7,31 +7,31 @@
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#banner" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#banner" data-bs-slide-to="2"></button>
+                <!-- <button type="button" data-bs-target="#banner" data-bs-slide-to="2"></button> -->
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="/src/images/banner1.jpg" class="d-block" style="width:100%">
                     <div class="carousel-caption">
-                        <h3>RWD網頁</h3>
+                        <h3>套版方案</h3>
                         <p></p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="/src/images/banner2.jpg" class="d-block" style="width:100%">
                     <div class="carousel-caption">
-                        <h3>VUE3.js</h3>
+                        <h3>客製化方案</h3>
                         <p></p>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <!-- <div class="carousel-item">
                     <img src="/src/images/banner3.jpg" class="d-block"
                         style="width:100%">
                     <div class="carousel-caption carousel-captio3">
-                        <h3>客製化</h3>
+                        <h3></h3>
                         <p></p>
                     </div>
-                </div>
+                </div> -->
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
@@ -51,16 +51,19 @@
 }
 
 .banner {
+    
     background-color:#cce6ff ;
-    border: 1px solid #fff;
+    
     
     
 
 
     img {
-       
+        
+        border-top: 3px solid #e4e4e4;
         width: 100%;
-        height: 300px;
+        height: 500px;
+        
         
     }
 
@@ -68,7 +71,7 @@
 
         
         min-width: 300px;
-        height: 300px;
+        height: 500px;
         overflow: hidden;
         // position: relative; 
         
@@ -76,8 +79,9 @@
         
 
         .carousel-item {
+            
             width: 100%;
-            height: 300px;
+            height: 500px;
             transition: transform 0.5s;
             // position: absolute;
         }
@@ -88,6 +92,14 @@
 
 
 .carousel-captio3{
+    
         color:#FF6F61;
     }
+
+
+
+    @media screen and (max-width:768px) {
+
+
+}
 </style>

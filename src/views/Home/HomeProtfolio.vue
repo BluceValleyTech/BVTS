@@ -65,7 +65,7 @@ const hideText = () => {
     //     align-items: center;
     //     text-align: center;
     .containerList {
-        border: 3px solid #e4e4e4;
+        border-top: 3px solid #e4e4e4;
         background-color: #cce6ff;
         flex-grow: 1;
         display: flex;

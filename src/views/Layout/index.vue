@@ -10,13 +10,9 @@ import LayoutNavigationSmallMove from '/src/views/Layout/LayoutNavigationSmallMo
 
 
 <template>
-<navigation/>
 <LayoutNav/>
-<LayoutHeader/>
 <LayoutNavigationSmall/>
 <RouterView />
-<LayoutFooter/>
-<LayoutNavigationSmallMove/>
 </template>
 
 

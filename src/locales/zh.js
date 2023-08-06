@@ -19,4 +19,5 @@ export default {
     FB_IG: 'FB & IG',
     additonal: '附加價值',
     email:'電子信箱',
+    webDesign:'網頁設計',
 }
