@@ -13,6 +13,7 @@ import LayoutNavigationSmallMove from '/src/views/Layout/LayoutNavigationSmallMo
 <LayoutNav/>
 <LayoutNavigationSmall/>
 <RouterView />
+<LayoutFooter/>
 </template>
 
 
